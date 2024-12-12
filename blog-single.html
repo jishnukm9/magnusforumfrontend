@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="TechyDevs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Magnus Forum -  Ask Questions</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" sizes="16x16" href="images/favicon.png">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- end inject -->
+</head>
+<body>
+
+<!-- start cssload-loader -->
+<div id="preloader">
+    <div class="loader">
+        <svg class="spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+</div>
+<!-- end cssload-loader -->
+
+<!--======================================
+        START HEADER AREA
+    ======================================-->
+    <header class="header-area bg-white shadow-sm">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2">
+                    <div class="logo-box">
+                        <!-- <a href="index.html" class="logo"><img width="140" src="images/logo-black.png" alt="logo"></a> -->
+                        <a href="index.html" class="logo"><img width="140" src="images/logo-black.png" alt="logo"></a>
+                        <div class="user-action">
+                            <div class="search-menu-toggle icon-element icon-element-xs shadow-sm me-1" data-bs-toggle="tooltip" data-placement="top" title="Search">
+                                <i class="la la-search"></i>
+                            </div>
+                            <div class="off-canvas-menu-toggle icon-element icon-element-xs shadow-sm" data-bs-toggle="tooltip" data-placement="top" title="Main menu">
+                                <i class="la la-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col-lg-2 -->
+                <div class="col-lg-10">
+                    <div class="menu-wrapper border-left border-left-gray ps-4 justify-content-end">
+                        <nav class="menu-bar me-auto menu--bar">
+                            
+                            
+                        </nav><!-- end main-menu -->
+                        <form method="post" class="me-2">
+                            <div class="form-group mb-0">
+                                <input class="form-control form--control h-auto py-2" type="text" name="search" placeholder="Type your search words...">
+                                <button class="form-btn" type="button"><i class="la la-search"></i></button>
+                            </div>
+                        </form>
+                        <div class="nav-right-button">
+                            <a href="login.html" class="btn theme-btn theme-btn-sm theme-btn-outline me-1">Log in</a>
+                            <a href="signup.html" class="btn theme-btn theme-btn-sm">Sign up</a>
+                        </div><!-- end nav-right-button -->
+                    </div><!-- end menu-wrapper -->
+                </div><!-- end col-lg-10 -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+        <div class="off-canvas-menu custom-scrollbar-styled">
+            <div class="off-canvas-menu-close icon-element icon-element-sm shadow-sm" data-bs-toggle="tooltip" data-placement="left" title="Close menu">
+                <i class="la la-times"></i>
+            </div><!-- end off-canvas-menu-close -->
+            <ul class="generic-list-item off-canvas-menu-list pt-90px">
+                
+            <div class="off-canvas-btn-box px-4 pt-5 text-center">
+                <a href="#" class="btn theme-btn theme-btn-sm theme-btn-outline" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="la la-sign-in me-1"></i> Login</a>
+                <span class="fs-15 fw-medium d-inline-block mx-2">Or</span>
+                <a href="#" class="btn theme-btn theme-btn-sm" data-bs-toggle="modal" data-bs-target="#signUpModal"><i class="la la-plus me-1"></i> Sign up</a>
+            </div>
+        </div><!-- end off-canvas-menu -->
+        <div class="mobile-search-form">
+            <div class="d-flex align-items-center">
+                <form method="post" class="flex-grow-1 me-3">
+                    <div class="form-group mb-0">
+                        <input class="form-control form--control pl-40px" type="text" name="search" placeholder="Type your search words...">
+                        <span class="la la-search input-icon"></span>
+                    </div>
+                </form>
+                <div class="search-bar-close icon-element icon-element-sm shadow-sm">
+                    <i class="la la-times"></i>
+                </div><!-- end off-canvas-menu-close -->
+            </div>
+        </div><!-- end mobile-search-form -->
+        <div class="body-overlay"></div>
+    </header><!-- end header-area -->
+    <!--======================================
+            END HEADER AREA
+    ======================================-->
+
+<!--======================================
+        START HERO AREA
+======================================-->
+<section class="hero-area pattern-bg-2 bg-white shadow-sm overflow-hidden pt-50px pb-50px">
+    <span class="stroke-shape stroke-shape-1"></span>
+    <span class="stroke-shape stroke-shape-2"></span>
+    <span class="stroke-shape stroke-shape-3"></span>
+    <span class="stroke-shape stroke-shape-4"></span>
+    <span class="stroke-shape stroke-shape-5"></span>
+    <span class="stroke-shape stroke-shape-6"></span>
+    <div class="container">
+        <div class="hero-content">
+            <ul class="breadcrumb-list pb-2">
+                <li><a href="#">Home</a><span><svg xmlns="http://www.w3.org/2000/svg" height="19px" viewBox="0 0 24 24" width="19px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/></svg></span></li>
+                <li><a href="#">Mobile Servicing</a><span><svg xmlns="http://www.w3.org/2000/svg" height="19px" viewBox="0 0 24 24" width="19px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"/></svg></span></li>
+                <li>Top 5 Common Smartphone Issues and How to Fix Them</li>
+            </ul>
+            <h2 class="section-title">Top 5 Common Smartphone Issues and How to Fix Them</h2>
+            <div class="media media-card align-items-center shadow-none p-0 mb-0 rounded-0 mt-4 bg-transparent">
+                <a href="#" class="media-img media-img--sm d-block me-2 rounded-full">
+                    <img src="images/img-loading.png" data-src="images/img53.jpg" alt="avatar" class="rounded-full lazy">
+                </a>
+                <div class="media-body">
+                    <h5 class="fs-14 fw-medium">By <a href="#">Riyas P</a></h5>
+                    <small class="meta d-block lh-20">
+                        <span class="me-2">Feb 25, 2021</span>
+                        <span class="me-2 fs-15">.</span>
+                        <a href="#comments" class="page-scroll text-gray"><i class="la la-comment me-1"></i>3</a>
+                    </small>
+                </div>
+            </div>
+        </div><!-- end hero-content -->
+    </div><!-- end container -->
+</section><!-- end hero-area -->
+<!--======================================
+        END HERO AREA
+======================================-->
+
+<!-- ================================
+         START BLOG AREA
+================================= -->
+<section class="blog-area pt-80px pb-80px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card card-item">
+                    <div class="card-body">
+
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <a href="images/img6.jpg" class="gallery-item overflow-hidden mb-4" data-fancybox="gallery">
+                                    <img class="lazy" src="images/case-study1.jpg" data-src="images/case-study1.jpg" alt="review image">
+                                </a>
+                            </div><!-- end col-lg-6 -->
+                            
+                        </div><!-- end row -->
+
+
+                        
+                        <p class="card-text pb-3">Smartphones have become an essential part of our lives, helping us stay connected, productive, and entertained. However, like any other piece of technology, they’re not immune to problems. One of the most common issues people face is a cracked screen, which usually occurs due to accidental drops or impacts. While applying a screen protector or tape can serve as a temporary fix to prevent further damage and protect your fingers, replacing the screen at an authorized service center or by a professional repair technician is often the permanent solution. </p>
+                        <p class="card-text pb-3">Another frequent complaint is short battery life. Over time, smartphone batteries tend to lose their efficiency, causing them to drain faster. Simple changes like reducing screen brightness, using dark mode, and closing background apps that consume power can help. If the battery is old or swollen, replacing it is the best option to restore your phone’s usability. </p>
+                        <p class="card-text pb-3">Many users also experience slow performance as their devices age or when storage becomes full. Clearing cache, deleting unnecessary apps or files, and restarting the phone can often resolve the issue. For persistent problems, a factory reset after backing up your data can refresh the system and improve performance significantly. </p>
+                        <p class="card-text pb-3"> Overheating is another concern, often caused by extensive gaming, prolonged charging, or usage in high-temperature environments. Avoiding phone usage while charging, removing the case for better ventilation, and turning off unused features like GPS, Bluetooth, or Wi-Fi can prevent overheating and prolong the life of your device.</p>
+                        <p class="card-text pb-3">Connectivity issues with Wi-Fi, Bluetooth, or mobile networks can be incredibly frustrating. Restarting the phone and reconnecting to the network, forgetting and re-adding Wi-Fi networks, or unpairing and pairing Bluetooth devices are quick fixes. Keeping your phone’s software updated is also crucial, as connectivity bugs are often addressed in updates. </p>
+                        <p class="card-text pb-3"> While these solutions can help address common smartphone problems, some issues may require professional intervention. It’s essential to have your phone serviced by a reliable technician, particularly for hardware-related problems. Prevention is just as important—use protective cases, avoid overloading your phone with unnecessary apps, and keep your software up to date. By addressing these issues promptly, you can extend the life of your smartphone and enjoy a seamless experience.</p>
+                   
+                
+                        
+                      
+                        <hr class="border-top-gray">
+                        <h4 class="pb-3 fs-20 pt-2">Tags:</h4>
+                        <div class="tags pb-3">
+                            <a href="#" class="tag-link tag-link-md">display</a>
+                            <a href="#" class="tag-link tag-link-md">computer</a>
+                            <a href="#" class="tag-link tag-link-md">screen</a>
+                        </div>
+
+
+                        <!-- <h4 class="pb-2 fs-20">Share:</h4>
+                        <div class="social-icon-box">
+                            <a class="me-1 icon-element icon-element-xs shadow-sm text-gray hover-y d-inline-block" href="#" target="_blank" title="Share on Facebook">
+                                <svg focusable="false" class="svg-inline--fa fa-facebook-f fa-w-10" width="15px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                            </a>
+                            <a class="me-1 icon-element icon-element-xs shadow-sm text-gray hover-y d-inline-block" href="#" target="_blank" title="Share on Twitter">
+                                <svg focusable="false" class="svg-inline--fa fa-twitter fa-w-16" width="15px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                            </a>
+                            <a class="me-1 icon-element icon-element-xs shadow-sm text-gray hover-y d-inline-block" href="#" target="_blank" title="Share on Linkedin">
+                                <svg focusable="false" class="svg-inline--fa fa-linkedin fa-w-14" width="15px" height="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                            </a>
+                        </div> -->
+
+
+                    </div><!-- end card-body -->
+                </div><!-- end card -->
+                <div class="card card-item">
+                    <div class="card-body">
+                        <h4 class="pb-3 fs-20">3 Comments</h4>
+                        <ul class="comments-list pt-3" id="comments">
+                            <li class="mb-3">
+                                <div class="comment-avatar">
+                                    <img class="lazy" src="images/img-loading.png" data-src="images/img53.jpg" alt="avatar">
+                                </div>
+                                <div class="comment-body pt-0">
+                                    <span class="comment-user text-black">Aswin</span>
+                                    <span class="comment-separated">-</span>
+                                    <span class="comment-date text-gray">8 hours ago</span>
+                                    <p class="comment-text pt-1 pb-2 lh-22">This blog was so helpful! My phone’s battery life has been terrible lately, and I didn’t know reducing screen brightness and enabling dark mode could make such a big difference. I’m going to try these tips immediately. Thanks for sharing!</p>
+                                    <a href="#" class="comment-reply text-color hover-underline" data-bs-toggle="modal" data-bs-target="#replyModal"><i class="la la-reply me-1"></i>Reply</a>
+                                </div>
+                            </li>
+                            <li class="mb-3 comment-reply">
+                                <div class="comment-avatar">
+                                    <img class="lazy" src="images/img-loading.png" data-src="images/img53.jpg" alt="avatar">
+                                </div>
+                                <div class="comment-body pt-0">
+                                    <span class="comment-user text-black">Kevin</span>
+                                    <span class="comment-separated">-</span>
+                                    <span class="comment-date text-gray">8 hours ago</span>
+                                    <p class="comment-text pt-1 pb-2 lh-22">Great insights! My phone overheats all the time when I’m gaming, and I wasn’t aware that using it while charging made it worse. I’ll start removing the case and turning off unused features. Any tips for keeping my phone cool during long gaming sessions?.</p>
+                                    <!-- <a href="#" class="comment-reply text-color hover-underline" data-bs-toggle="modal" data-bs-target="#replyModal"><i class="la la-reply me-1"></i>Reply</a> -->
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div class="comment-avatar">
+                                    <img class="lazy" src="images/img-loading.png" data-src="images/img53.jpg" alt="avatar">
+                                </div>
+                                <div class="comment-body pt-0">
+                                    <span class="comment-user text-black">Arun</span>
+                                    <span class="comment-separated">-</span>
+                                    <span class="comment-date text-gray">8 hours ago</span>
+                                    <p class="comment-text pt-1 pb-2 lh-22">Fantastic article! I recently faced a connectivity issue with Wi-Fi and had no idea that forgetting and re-adding networks could help. It worked like a charm for me. Could you also write about optimizing smartphone storage to improve performance?</p>
+                                    <a href="#" class="comment-reply text-color hover-underline" data-bs-toggle="modal" data-bs-target="#replyModal"><i class="la la-reply me-1"></i>Reply</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- end card-body -->
+                </div><!-- end card -->
+                <form method="post" class="card card-item">
+                    <div class="card-body row">
+                        <div class="form-group col-lg-12">
+                            <h4 class="fs-20">Leave a Reply</h4>
+                            <!-- <p class="fs-14">Your email address will not be published. Required fields are marked *</p> -->
+                        </div><!-- end form-group -->
+                        
+                        <div class="form-group col-lg-12">
+                            <label class="fs-13 text-black lh-20">Message</label>
+                            <textarea class="form-control form--control" name="message" rows="5" placeholder="Your comment here..."></textarea>
+                        </div><!-- end form-group -->
+                        <div class="form-group col-lg-12 mb-0">
+                            <div class="mb-3">
+                                <div class="form-check fs-14">
+                                    <!-- <input class="form-check-input" type="checkbox" value="" id="saveAll">
+                                    <label class="form-check-label" for="saveAll">
+                                        Save my name and email in this browser for the next time I comment.
+                                    </label> -->
+                                </div>
+                            </div>
+                            <button class="btn theme-btn" type="submit">Post Comment </button>
+                        </div><!-- end form-group -->
+                    </div><!-- end card-body -->
+                </form>
+            </div><!-- end col-lg-8 -->
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <div class="card card-item">
+                        <div class="card-body">
+                            <h3 class="fs-17 pb-3">Search Case Study</h3>
+                            <div class="divider"><span></span></div>
+                            <form method="post" class="pt-4">
+                                <div class="form-group mb-0">
+                                    <input class="form-control form--control form--control-bg-gray" type="text" name="search" placeholder="Search Case Study...">
+                                    <button class="form-btn" type="button"><i class="la la-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!-- end card -->
+
+                    <div class="card card-item">
+                        <div class="card-body">
+                            <h3 class="fs-17 pb-3">Top Case Studies</h3>
+                            <div class="divider"><span></span></div>
+                            <div class="sidebar-questions pt-3">
+                                <div class="media media-card media--card media--card-2">
+                                    <div class="media-body">
+                                        <h5><a href="blog-single.html">Revamping Customer Experience in Mobile and Laptop Repair: A Case Study on Modern Service Practices</a></h5>
+                                        <small class="meta">
+                                            <span class="pe-1">2 mins ago</span>
+                                            <span class="pe-1">. by</span>
+                                            <a href="#" class="author">Jeenu</a>
+                                        </small>
+                                    </div>
+                                </div><!-- end media -->
+                                <div class="media media-card media--card media--card-2">
+                                    <div class="media-body">
+                                        <h5><a href="blog-single.html">Cost-Effective Solutions in Mobile and Laptop Servicing: Balancing Quality and Affordability</a></h5>
+                                        <small class="meta">
+                                            <span class="pe-1">48 mins ago</span>
+                                            <span class="pe-1">. by</span>
+                                            <a href="#" class="author">Riyas</a>
+                                        </small>
+                                    </div>
+                                </div><!-- end media -->
+                                <div class="media media-card media--card media--card-2">
+                                    <div class="media-body">
+                                        <h5><a href="blog-single.html">Leveraging Technology in Mobile and Laptop Repair Services: A Study of Diagnostic Tools and Techniques</a></h5>
+                                        <small class="meta">
+                                            <span class="pe-1">1 hour ago</span>
+                                            <span class="pe-1">. by</span>
+                                            <a href="#" class="author">Sayooj</a>
+                                        </small>
+                                    </div>
+                                </div><!-- end media -->
+                            </div><!-- end sidebar-questions -->
+                        </div>
+                    </div><!-- end card -->
+                    <div class="card card-item">
+                        <div class="card-body">
+                            <h3 class="fs-17 pb-3">Top Categories</h3>
+                            <div class="divider"><span></span></div>
+                            <div class="category-list pt-4">
+                                <a href="#" class="cat-item d-flex align-items-center justify-content-between mb-3 hover-y">
+                                    <span class="cat-title">Mobile Phone Repair</span>
+                                    <span class="cat-number">238</span>
+                                </a>
+                                <a href="#" class="cat-item d-flex align-items-center justify-content-between mb-3 hover-y">
+                                    <span class="cat-title">Laptop Repair</span>
+                                    <span class="cat-number">238</span>
+                                </a>
+                                <a href="#" class="cat-item d-flex align-items-center justify-content-between mb-3 hover-y">
+                                    <span class="cat-title">Tablet Repair</span>
+                                    <span class="cat-number">238</span>
+                                </a>
+                                <a href="#" class="cat-item d-flex align-items-center justify-content-between mb-3 hover-y">
+                                    <span class="cat-title">Smartwatch Repair</span>
+                                    <span class="cat-number">238</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- end card -->
+                  
+                    <div class="card card-item">
+                        <div class="card-body">
+                            <h3 class="fs-17 pb-3">Top Tags</h3>
+                            <div class="divider"><span></span></div>
+                            <div class="tags pt-4">
+                                <a href="#" class="tag-link tag-link-md">mobilePhoneRepair</a>
+                                <a href="#" class="tag-link tag-link-md">laptopServicing</a>
+                                <a href="#" class="tag-link tag-link-md">tabletRepair</a>
+                                <a href="#" class="tag-link tag-link-md">smartwatchRepair</a>
+                                <a href="#" class="tag-link tag-link-md">electronicsMaintenance</a>
+                                <a href="#" class="tag-link tag-link-md">gadgetTroubleshooting</a>
+                                <a href="#" class="tag-link tag-link-md">deviceOverhaul</a>
+                                <a href="#" class="tag-link tag-link-md">techSupport</a>
+                                <a href="#" class="tag-link tag-link-md">hardwareFix</a>
+                            </div>
+                        </div>
+                    </div><!-- end card -->
+                    <div class="card card-item">
+                       
+                    </div><!-- end card -->
+                </div><!-- end sidebar -->
+            </div><!-- end col-lg-4 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end blog-area -->
+<!-- ================================
+         END BLOG AREA
+================================= -->
+
+<!-- ================================
+         START BLOG AREA
+================================= -->
+<section class="blog-area pt-80px pb-50px bg-gray">
+    <div class="container">
+        <h2 class="section-title fs-30">Related Case Studies</h2>
+        <div class="row mt-40px">
+            <div class="col-lg-4">
+                <div class="card card-item hover-y">
+                    <a href="blog-single.html" class="card-img">
+                        <img class="lazy" src="images/case-study4.png" data-src="images/case-study4.jpg" alt="Card image">
+                    </a>
+                    <div class="card-body pt-0">
+                        <a href="#" class="card-link">Mobile Phone Repair</a>
+                        <h5 class="card-title fw-medium"><a href="blog-single.html">How to Fix Common Issues with Your Smartphone</a></h5>
+                        <div class="media media-card align-items-center shadow-none p-0 mb-0 rounded-0 mt-4 bg-transparent">
+                            <a href="#" class="media-img media-img--sm d-block me-2 rounded-full">
+                                <img src="images/img53.jpg" alt="avatar" class="rounded-full">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="fs-14 fw-medium">By <a href="#">Rahul Kumar</a></h5>
+                                <small class="meta d-block lh-20">
+                                    <span>Feb 25, 2021</span>
+                                </small>
+                            </div>
+                        </div>
+                    </div><!-- end card-body -->
+                </div><!-- end card -->
+            </div><!-- end col-lg-4 -->
+            <div class="col-lg-4">
+                <div class="card card-item hover-y">
+                    <a href="blog-single.html" class="card-img">
+                        <img class="lazy" src="images/case-study4.png" data-src="images/case-study4.jpg" alt="Card image">
+                    </a>
+                    <div class="card-body pt-0">
+                        <a href="#" class="card-link">Mobile Phone Repair</a>
+                        <h5 class="card-title fw-medium"><a href="blog-single.html">How to Fix Common Issues with Your Smartphone</a></h5>
+                        <div class="media media-card align-items-center shadow-none p-0 mb-0 rounded-0 mt-4 bg-transparent">
+                            <a href="#" class="media-img media-img--sm d-block me-2 rounded-full">
+                                <img src="images/img53.jpg" alt="avatar" class="rounded-full">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="fs-14 fw-medium">By <a href="#">Rahul Kumar</a></h5>
+                                <small class="meta d-block lh-20">
+                                    <span>Feb 25, 2021</span>
+                                </small>
+                            </div>
+                        </div>
+                    </div><!-- end card-body -->
+                </div><!-- end card -->
+            </div><!-- end col-lg-4 -->
+            <div class="col-lg-4">
+                <div class="card card-item hover-y">
+                    <a href="blog-single.html" class="card-img">
+                        <img class="lazy" src="images/case-study4.png" data-src="images/case-study4.jpg" alt="Card image">
+                    </a>
+                    <div class="card-body pt-0">
+                        <a href="#" class="card-link">Mobile Phone Repair</a>
+                        <h5 class="card-title fw-medium"><a href="blog-single.html">How to Fix a Water Damaged Mobile Phone</a></h5>
+                        <div class="media media-card align-items-center shadow-none p-0 mb-0 rounded-0 mt-4 bg-transparent">
+                            <a href="#" class="media-img media-img--sm d-block me-2 rounded-full">
+                                <img src="images/img53.jpg" alt="avatar" class="rounded-full">
+                            </a>
+                            <div class="media-body">
+                                <h5 class="fs-14 fw-medium">By <a href="#">Rajesh</a></h5>
+                                <small class="meta d-block lh-20">
+                                    <span>Feb 25, 2021</span>
+                                </small>
+                            </div>
+                        </div>
+                    </div><!-- end card-body -->
+                </div><!-- end card -->
+            </div><!-- end col-lg-4 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end blog-area -->
+<!-- ================================
+         END BLOG AREA
+================================= -->
+
+<!-- ================================
+         START FOOTER AREA
+================================= -->
+<section class="footer-area pt-0px bg-dark position-relative">
+  
+    <hr class="border-top-gray my-5">
+    <div class="container">
+        <div class="row align-items-center pb-4 copyright-wrap">
+            <div class="col-lg-6">
+                <a href="index.html" class="d-inline-block">
+                    <img  width="140" src="images/logo-white.png" alt="footer logo" class="footer-logo">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <p class="copyright-desc text-end fs-14">Copyright &copy; <span id="copyright-date"></span> <a href="https://nexcrestit.com/">Nexcrest IT LLP.</a> </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================================
+          END FOOTER AREA
+================================= -->
+
+<!-- start back to top -->
+<div id="back-to-top" data-bs-toggle="tooltip" data-placement="top" title="Return to top">
+    <i class="la la-arrow-up"></i>
+</div>
+<!-- end back to top -->
+
+<!-- Modal -->
+<div class="modal fade modal-container" id="replyModal" tabindex="-1" role="dialog" aria-labelledby="replyModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header align-items-center">
+                <h5 class="modal-title" id="replyModalTitle">Replay to this comment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="la la-times"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post">
+                    <div class="form-group">
+                        <label class="fs-14 text-black fw-medium lh-20">Message</label>
+                        <textarea class="form-control form--control" rows="5" placeholder="Write message here..."></textarea>
+                    </div>
+                    <div class="btn-box">
+                        <button type="submit" class="btn theme-btn w-100">
+                            Reply <i class="la la-arrow-right icon ms-1"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- template js files -->
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.lazy.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="TechyDevs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Magnus Forum -  Ask Questions</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" sizes="16x16" href="images/favicon.png">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- end inject -->
+</head>
+<body>
+
+<!-- start cssload-loader -->
+<div id="preloader">
+    <div class="loader">
+        <svg class="spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+</div>
+<!-- end cssload-loader -->
+
+<!--======================================
+        START HEADER AREA
+    ======================================-->
+    <header class="header-area bg-white shadow-sm">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2">
+                    <div class="logo-box">
+                       
+                        <a href="index.html" class="logo"><img width="140" src="images/logo-black.png" alt="logo"></a>
+                        <div class="user-action">
+                            <div class="search-menu-toggle icon-element icon-element-xs shadow-sm me-1" data-bs-toggle="tooltip" data-placement="top" title="Search">
+                                <i class="la la-search"></i>
+                            </div>
+                            <div class="off-canvas-menu-toggle icon-element icon-element-xs shadow-sm" data-bs-toggle="tooltip" data-placement="top" title="Main menu">
+                                <i class="la la-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col-lg-2 -->
+                <div class="col-lg-10">
+                    <div class="menu-wrapper border-left border-left-gray ps-4 justify-content-end">
+                        <nav class="menu-bar me-auto menu--bar">
+                            
+                        </nav>
+                        <!-- end main-menu -->
+                        <form method="post" class="me-2">
+                            <div class="form-group mb-0">
+                                <input class="form-control form--control h-auto py-2" type="text" name="search" placeholder="Search Case Study...">
+                                <button class="form-btn" type="button"><i class="la la-search"></i></button>
+                            </div>
+                        </form>
+                        <div class="nav-right-button">
+                            <a href="login.html" class="btn theme-btn theme-btn-sm theme-btn-outline me-1">Log in</a>
+                            <a href="signup.html" class="btn theme-btn theme-btn-sm">Sign up</a>
+                        </div>
+                        <!-- end nav-right-button -->
+                    </div><!-- end menu-wrapper -->
+                </div><!-- end col-lg-10 -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+        <div class="off-canvas-menu custom-scrollbar-styled">
+            <div class="off-canvas-menu-close icon-element icon-element-sm shadow-sm" data-bs-toggle="tooltip" data-placement="left" title="Close menu">
+                <i class="la la-times"></i>
+            </div>
+          
+            <div class="off-canvas-btn-box px-4 pt-100px text-center">
+                <a href="#" class="btn theme-btn theme-btn-sm theme-btn-outline" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="la la-sign-in me-1"></i> Login</a>
+                <span class="fs-15 fw-medium d-inline-block mx-2">Or</span>
+                <a href="#" class="btn theme-btn theme-btn-sm" data-bs-toggle="modal" data-bs-target="#signUpModal"><i class="la la-plus me-1"></i> Sign up</a>
+            </div>
+        </div>
+        <!-- end off-canvas-menu -->
+        <div class="mobile-search-form">
+            <div class="d-flex align-items-center">
+                <form method="post" class="flex-grow-1 me-3">
+                    <div class="form-group mb-0">
+                        <input class="form-control form--control pl-40px" type="text" name="search" placeholder="Type your search words...">
+                        <span class="la la-search input-icon"></span>
+                    </div>
+                </form>
+                <div class="search-bar-close icon-element icon-element-sm shadow-sm">
+                    <i class="la la-times"></i>
+                </div>
+                <!-- end off-canvas-menu-close -->
+            </div>
+        </div>
+        <!-- end mobile-search-form -->
+        <div class="body-overlay"></div>
+    </header>
+<!--======================================
+        END HEADER AREA
+======================================-->
+
+<!--======================================
+        START HERO AREA
+======================================-->
+<section class="hero-area pattern-bg-2 bg-white shadow-sm overflow-hidden ">
+    <span class="stroke-shape stroke-shape-1"></span>
+    <span class="stroke-shape stroke-shape-2"></span>
+    <span class="stroke-shape stroke-shape-3"></span>
+    <span class="stroke-shape stroke-shape-4"></span>
+    <span class="stroke-shape stroke-shape-5"></span>
+    <span class="stroke-shape stroke-shape-6"></span>
+    <div class="container">
+        <div class="hero-content pt-40px pb-40px">
+
+            <div class="d-flex flex-wrap align-items-center justify-content-between ">
+                <h2 class="section-title pb-3">Case Studies</h2>
+                <a href="add-post.html" class="btn theme-btn theme-btn-sm">Post Case Study</a>
+            </div>
+
+
+
+         
+        </div><!-- end hero-content -->
+    </div><!-- end container -->
+</section><!-- end hero-area -->
+<!--======================================
+        END HERO AREA
+======================================-->
+
+<!-- ================================
+         START BLOG AREA
+================================= -->
+<section class="blog-area pt-80px pb-80px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-6 responsive-column-half">
+                        <div class="card card-item hover-y">
+                            <a href="blog-single.html" class="card-img">
+                                <img class="lazy" src="images/case-study1.jpg" data-src="images/case-study1.jpg" alt="Card image">
+                            </a>
+                            <div class="card-body pt-0">
+                                <a href="#" class="card-link">Mobile Servicing</a>
+                                <h5 class="card-title fw-medium"><a href="blog-single.html">Top 5 Common Smartphone Issues and How to Fix Them</a></h5>
+                                <div class="media media-card align-items-center shadow-none p-0 mb-0 rounded-0 mt-4 bg-transparent">
+                                    <a href="#" class="media-img media-img--sm d-block me-2 rounded-full">
+                                        <img src="images/img53.jpg" alt="avatar" class="rounded-full">
+                                    </a>
+                                    <div class="media-body">
+                                        <h5 class="fs-14 fw-medium">By <a href="#">Riyas P</a></h5>
+                                        <small class="meta d-block lh-20">
+                                            <span>Feb 25, 2021</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div><!-- end card-body -->
+                        </div><!-- end card -->
+                    </div><!-- end col-lg-6 -->
+                    <div class="col-lg-6 responsive-column-half">
+                        <div class="card card-item hover-y">
+                            <a href="blog-single.html" class="card-img">
+                                <img class="lazy" src="images/case-study3.jpg" data-src="images/case-study3.jpg" alt="Card image">
+                            </a>
+                            <div class="card-body pt-0">
+                                <a href="#" class="card-link">Diagnostic Services</a>
+                                <h5 class="card-title fw-medium"><a href="blog-single.html">When to Replace Your Phone Battery: Signs You Shouldn't Ignore</a></h5>
+                                <div class="media media-card align-items-center shadow-none p-0 mb-0 rounded-0 mt-4 bg-transparent">
+                                    <a href="#" class="media-img media-img--sm d-block me-2 rounded-full">
+                                        <img src="images/img53.jpg" alt="avatar" class="rounded-full">
+                                    </a>
+                                    <div class="media-body">
+                                        <h5 class="fs-14 fw-medium">By <a href="#">Naufal Rahman</a></h5>
+                                        <small class="meta d-block lh-20">
+                                            <span>Feb 25, 2021</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div><!-- end card-body -->
+                        </div><!-- end card -->
+                    </div><!-- end col-lg-6 -->
+                    <div class="col-lg-6 responsive-column-half">
+                        <div class="card card-item hover-y">
+                            <a href="blog-single.html" class="card-img">
+                                <img class="lazy" src="images/case-study2.jpg" data-src="images/case-study2.jpg" alt="Card image">
+                            </a>
+                            <div class="card-body pt-0">
+                                <a href="#" class="card-link">Preventive Care</a>
+                                <h5 class="card-title fw-medium"><a href="blog-single.html">Essential Tips to Protect Your Phone from Water Damage</a></h5>
+                                <div class="media media-card align-items-center shadow-none p-0 mb-0 rounded-0 mt-4 bg-transparent">
+                                    <a href="#" class="media-img media-img--sm d-block me-2 rounded-full">
+                                        <img src="images/img53.jpg" alt="avatar" class="rounded-full">
+                                    </a>
+                                    <div class="media-body">
+                                        <h5 class="fs-14 fw-medium">By <a href="#">Jishnu Km</a></h5>
+                                        <small class="meta d-block lh-20">
+                                            <span>Feb 25, 2021</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div><!-- end card-body -->
+                        </div><!-- end card -->
+                    </div><!-- end col-lg-6 -->
+                    <div class="col-lg-6 responsive-column-half">
+                        <div class="card card-item hover-y">
+                            <a href="blog-single.html" class="card-img">
+                                <img class="lazy" src="images/case-study4.jpg" data-src="images/case-study4.jpg" alt="Card image">
+                            </a>
+                            <div class="card-body pt-0">
+                                <a href="#" class="card-link">Software Solutions</a>
+                                <h5 class="card-title fw-medium"><a href="blog-single.html">How to Speed Up Your Laptop: Tips for Boosting Performance</a></h5>
+                                <div class="media media-card align-items-center shadow-none p-0 mb-0 rounded-0 mt-4 bg-transparent">
+                                    <a href="#" class="media-img media-img--sm d-block me-2 rounded-full">
+                                        <img src="images/img53.jpg" alt="avatar" class="rounded-full">
+                                    </a>
+                                    <div class="media-body">
+                                        <h5 class="fs-14 fw-medium">By <a href="#">Arjun</a></h5>
+                                        <small class="meta d-block lh-20">
+                                            <span>Feb 25, 2021</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div><!-- end card-body -->
+                        </div><!-- end card -->
+                    </div><!-- end col-lg-6 -->
+                    <div class="col-lg-6 responsive-column-half">
+                        <div class="card card-item hover-y">
+                            <a href="blog-single.html" class="card-img">
+                                <img class="lazy" src="images/case-study5.jpg" data-src="images/case-study5.jpg" alt="Card image">
+                            </a>
+                            <div class="card-body pt-0">
+                                <a href="#" class="card-link">Repair Services</a>
+                                <h5 class="card-title fw-medium"><a href="blog-single.html">Laptop Screen Replacement: What You Need to Know</a></h5>
+                                <div class="media media-card align-items-center shadow-none p-0 mb-0 rounded-0 mt-4 bg-transparent">
+                                    <a href="#" class="media-img media-img--sm d-block me-2 rounded-full">
+                                        <img src="images/img53.jpg" alt="avatar" class="rounded-full">
+                                    </a>
+                                    <div class="media-body">
+                                        <h5 class="fs-14 fw-medium">By <a href="#">Rinu</a></h5>
+                                        <small class="meta d-block lh-20">
+                                            <span>Feb 25, 2021</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div><!-- end card-body -->
+                        </div><!-- end card -->
+                    </div><!-- end col-lg-6 -->
+                    <div class="col-lg-6 responsive-column-half">
+                        <div class="card card-item hover-y">
+                            <a href="blog-single.html" class="card-img">
+                                <img class="lazy" src="images/case-study6.jpg" data-src="images/case-study6.jpg" alt="Card image">
+                            </a>
+                            <div class="card-body pt-0">
+                                <a href="#" class="card-link">Preventive Care</a>
+                                <h5 class="card-title fw-medium"><a href="blog-single.html">DIY Laptop Maintenance: Simple Steps to Prolong Your Laptop’s Life</a></h5>
+                                <div class="media media-card align-items-center shadow-none p-0 mb-0 rounded-0 mt-4 bg-transparent">
+                                    <a href="#" class="media-img media-img--sm d-block me-2 rounded-full">
+                                        <img src="images/img53.jpg" alt="avatar" class="rounded-full">
+                                    </a>
+                                    <div class="media-body">
+                                        <h5 class="fs-14 fw-medium">By <a href="#">Arun</a></h5>
+                                        <small class="meta d-block lh-20">
+                                            <span>Feb 25, 2021</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div><!-- end card-body -->
+                        </div><!-- end card -->
+                    </div><!-- end col-lg-6 -->
+                </div><!-- end row -->
+                <div class="pager text-center pt-30px">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination generic-pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="la la-arrow-left"></i></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true"><i class="la la-arrow-right"></i></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="fs-13 pt-3">Showing 1-6 results of 22 articles</p>
+                </div>
+            </div><!-- end col-lg-8 -->
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <div class="card card-item">
+                        <div class="card-body">
+                            <h3 class="fs-17 pb-3">Search Case Study</h3>
+                            <div class="divider"><span></span></div>
+                            <form method="post" class="pt-4">
+                                <div class="form-group mb-0">
+                                    <input class="form-control form--control form--control-bg-gray" type="text" name="search" placeholder="Search Case Study...">
+                                    <button class="form-btn" type="button"><i class="la la-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!-- end card -->
+
+                    <div class="card card-item">
+                        <div class="card-body">
+                            <h3 class="fs-17 pb-3">Top Case Studies</h3>
+                            <div class="divider"><span></span></div>
+                            <div class="sidebar-questions pt-3">
+                                <div class="media media-card media--card media--card-2">
+                                    <div class="media-body">
+                                        <h5><a href="blog-single.html">Revamping Customer Experience in Mobile and Laptop Repair: A Case Study on Modern Service Practices</a></h5>
+                                        <small class="meta">
+                                            <span class="pe-1">2 mins ago</span>
+                                            <span class="pe-1">. by</span>
+                                            <a href="#" class="author">Jeenu</a>
+                                        </small>
+                                    </div>
+                                </div><!-- end media -->
+                                <div class="media media-card media--card media--card-2">
+                                    <div class="media-body">
+                                        <h5><a href="blog-single.html">Cost-Effective Solutions in Mobile and Laptop Servicing: Balancing Quality and Affordability</a></h5>
+                                        <small class="meta">
+                                            <span class="pe-1">48 mins ago</span>
+                                            <span class="pe-1">. by</span>
+                                            <a href="#" class="author">Riyas</a>
+                                        </small>
+                                    </div>
+                                </div><!-- end media -->
+                                <div class="media media-card media--card media--card-2">
+                                    <div class="media-body">
+                                        <h5><a href="blog-single.html">Leveraging Technology in Mobile and Laptop Repair Services: A Study of Diagnostic Tools and Techniques</a></h5>
+                                        <small class="meta">
+                                            <span class="pe-1">1 hour ago</span>
+                                            <span class="pe-1">. by</span>
+                                            <a href="#" class="author">Sayooj</a>
+                                        </small>
+                                    </div>
+                                </div><!-- end media -->
+                            </div><!-- end sidebar-questions -->
+                        </div>
+                    </div><!-- end card -->
+                    <div class="card card-item">
+                        <div class="card-body">
+                            <h3 class="fs-17 pb-3">Top Categories</h3>
+                            <div class="divider"><span></span></div>
+                            <div class="category-list pt-4">
+                                <a href="#" class="cat-item d-flex align-items-center justify-content-between mb-3 hover-y">
+                                    <span class="cat-title">Mobile Phone Repair</span>
+                                    <span class="cat-number">238</span>
+                                </a>
+                                <a href="#" class="cat-item d-flex align-items-center justify-content-between mb-3 hover-y">
+                                    <span class="cat-title">Laptop Repair</span>
+                                    <span class="cat-number">238</span>
+                                </a>
+                                <a href="#" class="cat-item d-flex align-items-center justify-content-between mb-3 hover-y">
+                                    <span class="cat-title">Tablet Repair</span>
+                                    <span class="cat-number">238</span>
+                                </a>
+                                <a href="#" class="cat-item d-flex align-items-center justify-content-between mb-3 hover-y">
+                                    <span class="cat-title">Smartwatch Repair</span>
+                                    <span class="cat-number">238</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- end card -->
+                  
+                    <div class="card card-item">
+                        <div class="card-body">
+                            <h3 class="fs-17 pb-3">Top Tags</h3>
+                            <div class="divider"><span></span></div>
+                            <div class="tags pt-4">
+                                <a href="#" class="tag-link tag-link-md">mobilePhoneRepair</a>
+                                <a href="#" class="tag-link tag-link-md">laptopServicing</a>
+                                <a href="#" class="tag-link tag-link-md">tabletRepair</a>
+                                <a href="#" class="tag-link tag-link-md">smartwatchRepair</a>
+                                <a href="#" class="tag-link tag-link-md">electronicsMaintenance</a>
+                                <a href="#" class="tag-link tag-link-md">gadgetTroubleshooting</a>
+                                <a href="#" class="tag-link tag-link-md">deviceOverhaul</a>
+                                <a href="#" class="tag-link tag-link-md">techSupport</a>
+                                <a href="#" class="tag-link tag-link-md">hardwareFix</a>
+                            </div>
+                        </div>
+                    </div><!-- end card -->
+                    <div class="card card-item">
+                       
+                    </div><!-- end card -->
+                </div><!-- end sidebar -->
+            </div><!-- end col-lg-4 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end blog-area -->
+<!-- ================================
+         END BLOG AREA
+================================= -->
+
+<!-- ================================
+         START FOOTER AREA
+================================= -->
+<section class="footer-area pt-0px bg-dark position-relative">
+    
+    <hr class="border-top-gray my-5">
+    <div class="container">
+        <div class="row align-items-center pb-4 copyright-wrap">
+            <div class="col-lg-6">
+                <a href="index.html" class="d-inline-block">
+                    <img  width="140" src="images/logo-white.png" alt="footer logo" class="footer-logo">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <p class="copyright-desc text-end fs-14">Copyright &copy; <span id="copyright-date"></span> <a href="https://nexcrestit.com/">Nexcrest IT LLP.</a> </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================================
+          END FOOTER AREA
+================================= -->
+
+<!-- start back to top -->
+<div id="back-to-top" data-bs-toggle="tooltip" data-placement="top" title="Return to top">
+    <i class="la la-arrow-up"></i>
+</div>
+<!-- end back to top -->
+
+<!-- template js files -->
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.lazy.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

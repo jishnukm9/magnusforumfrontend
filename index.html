@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="TechyDevs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Magnus Forum -  Ask Questions</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" sizes="16x16" href="images/favicon.png">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/selectize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- end inject -->
+</head>
+<body>
+
+<!-- start cssload-loader -->
+<div id="preloader">
+    <div class="loader">
+        <svg class="spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+</div>
+<!-- end cssload-loader -->
+
+<!--======================================
+        START HEADER AREA
+    ======================================-->
+<header class="header-area bg-white shadow-sm">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-2">
+                <div class="logo-box">
+                    <!-- <a href="index.html" class="logo"><img width="140" src="images/logo-black.png" alt="logo"></a> -->
+                    <a href="index.html" class="logo"><img width="140" src="images/logo-black.png" alt="logo"></a>
+                    <div class="user-action">
+                        <div class="search-menu-toggle icon-element icon-element-xs shadow-sm me-1" data-bs-toggle="tooltip" data-placement="top" title="Search">
+                            <i class="la la-search"></i>
+                        </div>
+                        <div class="off-canvas-menu-toggle icon-element icon-element-xs shadow-sm" data-bs-toggle="tooltip" data-placement="top" title="Main menu">
+                            <i class="la la-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end col-lg-2 -->
+            <div class="col-lg-10">
+                <div class="menu-wrapper border-left border-left-gray ps-4 justify-content-end">
+                    <nav class="menu-bar me-auto menu--bar ">
+                        <ul>
+                            
+                        </ul>
+                    </nav>
+                    <!-- end main-menu -->
+                    <form method="post" class="me-2">
+                        <div class="form-group mb-0">
+                            <input class="form-control form--control h-auto py-2" type="text" name="search" placeholder="Search Questions...">
+                            <button class="form-btn" type="button"><i class="la la-search"></i></button>
+                        </div>
+                    </form>
+                    <div class="nav-right-button">
+                        <a href="login.html" class="btn theme-btn theme-btn-sm theme-btn-outline me-1">Log in</a>
+                        <a href="signup.html" class="btn theme-btn theme-btn-sm">Sign up</a>
+                    </div>
+                    <!-- end nav-right-button -->
+                </div><!-- end menu-wrapper -->
+            </div><!-- end col-lg-10 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+    <div class="off-canvas-menu custom-scrollbar-styled">
+        <div class="off-canvas-menu-close icon-element icon-element-sm shadow-sm" data-bs-toggle="tooltip" data-placement="left" title="Close menu">
+            <i class="la la-times"></i>
+        </div>
+        <ul class="generic-list-item off-canvas-menu-list pt-90px">
+
+            <li>
+                <a href="#">Home</a>
+                <ul class="sub-menu">
+                    <li><a href="index.html">Home - landing</a></li>
+                    <li><a href="home-2.html">Home - main</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Pages</a>
+                <ul class="sub-menu">
+                    <li><a href="user-profile.html">user profile</a></li>
+                    <li><a href="notifications.html">Notifications</a></li>
+                    <li><a href="referrals.html">Referrals</a></li>
+                    <li><a href="setting.html">settings</a></li>
+                    <li><a href="ask-question.html">ask question</a></li>
+                    <li><a href="question-details.html">question details</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="revisions.html">revisions</a></li>
+                    <li><a href="category.html">category</a></li>
+                    <li><a href="companies.html">companies</a></li>
+                    <li><a href="company-details.html">company details</a></li>
+                    <li><a href="careers.html">careers</a></li>
+                    <li><a href="career-details.html">career details</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="pricing-table.html">pricing tables</a></li>
+                    <li><a href="error.html">page 404</a></li>
+                    <li><a href="terms-and-conditions.html">Terms & conditions</a></li>
+                    <li><a href="privacy-policy.html">privacy policy</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">blog</a>
+                <ul class="sub-menu">
+                    <li><a href="blog-grid-no-sidebar.html">grid no sidebar</a></li>
+                    <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
+                    <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
+                    <li><a href="blog-single.html">blog detail</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="off-canvas-btn-box px-4 pt-5 text-center">
+            <a href="#" class="btn theme-btn theme-btn-sm theme-btn-outline" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="la la-sign-in me-1"></i> Login</a>
+            <span class="fs-15 fw-medium d-inline-block mx-2">Or</span>
+            <a href="#" class="btn theme-btn theme-btn-sm" data-bs-toggle="modal" data-bs-target="#signUpModal"><i class="la la-plus me-1"></i> Sign up</a>
+        </div>
+    </div>
+    <!-- end off-canvas-menu -->
+    <div class="mobile-search-form">
+        <div class="d-flex align-items-center">
+            <form method="post" class="flex-grow-1 me-3">
+                <div class="form-group mb-0">
+                    <input class="form-control form--control pl-40px" type="text" name="search" placeholder="Type your search words...">
+                    <span class="la la-search input-icon"></span>
+                </div>
+            </form>
+            <div class="search-bar-close icon-element icon-element-sm shadow-sm">
+                <i class="la la-times"></i>
+            </div>
+            <!-- end off-canvas-menu-close -->
+        </div>
+    </div>
+    <!-- end mobile-search-form -->
+    <div class="body-overlay"></div>
+</header>
+<!-- end header-area -->
+<!--======================================
+        END HEADER AREA
+======================================-->
+
+<!-- ================================
+         START QUESTION AREA
+================================= -->
+<section class="question-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 pr-0">
+                <div class="sidebar position-sticky top-0 pt-40px">
+                    <ul class="generic-list-item generic-list-item-highlight fs-15">
+                        <li class="lh-26"><a href="blog-right-sidebar.html"><i class="la la-home me-1 text-black"></i> Case Studies</a></li>
+                        <li class="lh-26 active"><a href="home-3.html"><i class="la la-globe me-1 text-black"></i> Questions</a></li>
+                        <li class="lh-26"><a href="tags-list.html"><i class="la la-tags me-1 text-black"></i> Tags</a></li>
+                        <li class="lh-26"><a href="user-list.html"><i class="la la-user me-1 text-black"></i> Users</a></li>
+                        <li class="lh-26"><a href="badges-list.html"><i class="la la-id-badge me-1 text-black"></i> Badges</a></li>
+                        <li class="lh-26"><a href="category-list.html"><i class="la la-sort me-1 text-black"></i> Categories</a></li>
+                        <!-- <li class="lh-26"><a href="job-list.html"><i class="la la-mouse me-1 text-black"></i> Jobs</a></li> -->
+                        <!-- <li class="lh-26"><a href="companies.html"><i class="la la-briefcase me-1 text-black"></i> Companies</a></li> -->
+                    </ul>
+                </div><!-- end sidebar -->
+            </div><!-- end col-lg-2 -->
+            <div class="col-lg-7 px-0">
+                <div class="question-main-bar border-left border-left-gray pt-40px pb-40px">
+                    <div class="filters pb-4 ps-3">
+                        <div class="d-flex flex-wrap align-items-center justify-content-between pb-3">
+                            <h3 class="fs-22 fw-medium">Newest Questions</h3>
+                            <a href="ask-question.html" class="btn theme-btn theme-btn-sm">Ask Question</a>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                            <p class="pt-1 fs-15 fw-medium lh-20">21,287 questions</p>
+                            <div class="filter-option-box w-20">
+                                <select class="form-select">
+                                    <option value="newest" selected="selected">Newest </option>
+                                    <!-- <option value="featured">Bountied (390)</option> -->
+                                    <option value="oldest">Oldest </option>
+                                    <option value="votes">Votes </option>
+                                    <!-- <option value="active">Active </option> -->
+                                    <option value="unanswered">Answered </option>
+                                </select>
+                            </div><!-- end filter-option-box -->
+                        </div>
+                    </div><!-- end filters -->
+                    <div class="questions-snippet border-top border-top-gray">
+                        <div class="media media-card rounded-0 shadow-none mb-0 bg-transparent p-3 border-bottom border-bottom-gray">
+                            <div class="votes text-center votes-2">
+                                <div class="vote-block">
+                                    <span class="vote-counts d-block text-center pr-0 lh-20 fw-medium">3</span>
+                                    <span class="vote-text d-block fs-13 lh-18">votes</span>
+                                </div>
+                                <div class="answer-block answered my-2">
+                                    <span class="answer-counts d-block lh-20 fw-medium">3</span>
+                                    <span class="answer-text d-block fs-13 lh-18">answers</span>
+                                </div>
+                                <div class="view-block">
+                                    <span class="view-counts d-block lh-20 fw-medium">12</span>
+                                    <span class="view-text d-block fs-13 lh-18">views</span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="mb-2 fw-medium"><a href="question-details.html">iPhone 13 Screen Completely Black But Phone Still Working</a></h5>
+                                <p class="mb-2 truncate lh-20 fs-15">My iPhone 13 is responsive (I can hear notifications and calls) but the screen is completely black. I tried force restart but no change. The phone wasn't dropped or damaged. What could be the issue?.</p>
+                                <div class="tags">
+                                    <a href="#" class="tag-link">screenRepair </a>
+                                    <a href="#" class="tag-link">iPhone13</a>
+                                    <a href="#" class="tag-link">displayIssues</a>
+                                    <!-- <a href="#" class="tag-link">select</a> -->
+                                </div>
+                                <div class="media media-card user-media align-items-center px-0 border-bottom-0 pb-0">
+                                    <a href="user-profile.html" class="media-img d-block">
+                                        <img src="images/img53.jpg" alt="avatar">
+                                    </a>
+                                    <div class="media-body d-flex flex-wrap align-items-center justify-content-between">
+                                        <div>
+                                            <h5 class="pb-1"><a href="user-profile.html">Salim M</a></h5>
+                                            <div class="stats fs-12 d-flex align-items-center lh-18">
+                                                <!-- <span class="text-black pe-2" title="Reputation score">224</span> -->
+                                                <span class="pe-2 d-inline-flex align-items-center" title="Gold badge"><span class="ball gold"></span>Gold</span>
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Silver badge"><span class="ball silver"></span>Silver</span>
+                                                <span class="pe-2 d-inline-flex align-items-center" title="Bronze badge"><span class="ball"></span>Bronze</span> -->
+                                            </div>
+                                        </div>
+                                        <small class="meta d-block text-end">
+                                            <span class="text-black d-block lh-18">asked</span>
+                                            <span class="d-block lh-18 fs-12">6 hours ago</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end media -->
+                        <div class="media media-card rounded-0 shadow-none mb-0 bg-transparent p-3 border-bottom border-bottom-gray">
+                            <div class="votes text-center votes-2">
+                                <div class="vote-block">
+                                    <span class="vote-counts d-block text-center pr-0 lh-20 fw-medium">3</span>
+                                    <span class="vote-text d-block fs-13 lh-18">votes</span>
+                                </div>
+                                <div class="answer-block answered-accepted my-2">
+                                    <span class="answer-counts d-block lh-20 fw-medium">3</span>
+                                    <span class="answer-text d-block fs-13 lh-18">answers</span>
+                                </div>
+                                <div class="view-block">
+                                    <span class="view-counts d-block lh-20 fw-medium">12</span>
+                                    <span class="view-text d-block fs-13 lh-18">views</span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="mb-2 fw-medium"><a href="question-details.html">Samsung S21 Battery Draining Extremely Fast After Latest Update</a></h5>
+                                <p class="mb-2 truncate lh-20 fs-15"> After the recent software update, my S21's battery drops from 100% to 20% in just 3 hours with minimal use. Before the update, it easily lasted all day. How can I fix this?</p>
+                                <div class="tags">
+                                    <a href="#" class="tag-link">BatteryDrain</a>
+                                    <a href="#" class="tag-link">SamsungS2</a>
+                                    <a href="#" class="tag-link">PowerIssues</a>
+                                    <a href="#" class="tag-link">select</a>
+                                </div>
+                                <div class="media media-card user-media align-items-center px-0 border-bottom-0 pb-0">
+                                    <a href="user-profile.html" class="media-img d-block">
+                                        <img src="images/img53.jpg" alt="avatar">
+                                    </a>
+                                    <div class="media-body d-flex flex-wrap align-items-center justify-content-between">
+                                        <div>
+                                            <h5 class="pb-1"><a href="user-profile.html">Riyas</a></h5>
+                                            <div class="stats fs-12 d-flex align-items-center lh-18">
+                                                <!-- <span class="text-black pe-2" title="Reputation score">224</span> -->
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Gold badge"><span class="ball gold"></span>Gold</span>
+                                                <span class="pe-2 d-inline-flex align-items-center" title="Silver badge"><span class="ball silver"></span>Silver</span> -->
+                                                <span class="pe-2 d-inline-flex align-items-center" title="Bronze badge"><span class="ball"></span>Bronze</span>
+                                            </div>
+                                        </div>
+                                        <small class="meta d-block text-end">
+                                            <span class="text-black d-block lh-18">asked</span>
+                                            <span class="d-block lh-18 fs-12">6 hours ago</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end media -->
+                        <div class="media media-card rounded-0 shadow-none mb-0 bg-transparent p-3 border-bottom border-bottom-gray">
+                            <div class="votes text-center votes-2">
+                                <div class="vote-block">
+                                    <span class="vote-counts d-block text-center pr-0 lh-20 fw-medium">3</span>
+                                    <span class="vote-text d-block fs-13 lh-18">votes</span>
+                                </div>
+                                <div class="answer-block my-2">
+                                    <span class="answer-counts d-block lh-20 fw-medium">0</span>
+                                    <span class="answer-text d-block fs-14 lh-18">answer</span>
+                                </div>
+                                <div class="view-block">
+                                    <span class="view-counts d-block lh-20 fw-medium">12</span>
+                                    <span class="view-text d-block fs-13 lh-18">views</span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="mb-2 fw-medium"><a href="question-details.html">Water Damaged iPhone - What to Do First?</a></h5>
+                                <p class="mb-2 truncate lh-20 fs-15">I accidentally dropped my iPhone in the pool. I immediately took it out and turned it off. What are the immediate steps I should take to save my device?</p>
+                                <div class="tags">
+                                    <a href="#" class="tag-link">WaterDamage</a>
+                                    <a href="#" class="tag-link">EmergencyRepair</a>
+                                    <a href="#" class="tag-link">iPhoneSalvage</a>
+                                    <!-- <a href="#" class="tag-link">select</a> -->
+                                </div>
+                                <div class="media media-card user-media align-items-center px-0 border-bottom-0 pb-0">
+                                    <a href="user-profile.html" class="media-img d-block">
+                                        <img src="images/img53.jpg" alt="avatar">
+                                    </a>
+                                    <div class="media-body d-flex flex-wrap align-items-center justify-content-between">
+                                        <div>
+                                            <h5 class="pb-1"><a href="user-profile.html">Vijay Kumar</a></h5>
+                                            <div class="stats fs-12 d-flex align-items-center lh-18">
+                                                <!-- <span class="text-black pe-2" title="Reputation score">224</span> -->
+
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Gold badge"><span class="ball gold"></span>Gold</span> -->
+                                                <span class="pe-2 d-inline-flex align-items-center" title="Silver badge"><span class="ball silver"></span>Silver</span>
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Bronze badge"><span class="ball"></span>Bronze</span> -->
+                                            </div>
+                                        </div>
+                                        <small class="meta d-block text-end">
+                                            <span class="text-black d-block lh-18">asked</span>
+                                            <span class="d-block lh-18 fs-12">6 hours ago</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end media -->
+                        <div class="media media-card rounded-0 shadow-none mb-0 bg-transparent p-3 border-bottom border-bottom-gray">
+                            <div class="votes text-center votes-2">
+                                <div class="vote-block">
+                                    <span class="vote-counts d-block text-center pr-0 lh-20 fw-medium">3</span>
+                                    <span class="vote-text d-block fs-13 lh-18">votes</span>
+                                </div>
+                                <div class="answer-block answered my-2">
+                                    <span class="answer-counts d-block lh-20 fw-medium">3</span>
+                                    <span class="answer-text d-block fs-13 lh-18">answers</span>
+                                </div>
+                                <div class="view-block">
+                                    <span class="view-counts d-block lh-20 fw-medium">12</span>
+                                    <span class="view-text d-block fs-13 lh-18">views</span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="mb-2 fw-medium"><a href="question-details.html">How to fix a phone that won't charge?</a></h5>
+                                <p class="mb-2 truncate lh-20 fs-15">My phone has stopped charging even though the charger and cable seem to work with other devices. What could be the problem, and how can I fix it?</p>
+                                <div class="tags">
+                                    <a href="#" class="tag-link">ChargingIssue</a>
+                                    <a href="#" class="tag-link">Troubleshooting</a>
+                                    <a href="#" class="tag-link">RepairTips</a>
+                                    <!-- <a href="#" class="tag-link">select</a> -->
+                                </div>
+                                <div class="media media-card user-media align-items-center px-0 border-bottom-0 pb-0">
+                                    <a href="user-profile.html" class="media-img d-block">
+                                        <img src="images/img53.jpg" alt="avatar">
+                                    </a>
+                                    <div class="media-body d-flex flex-wrap align-items-center justify-content-between">
+                                        <div>
+                                            <h5 class="pb-1"><a href="user-profile.html">John Paul</a></h5>
+                                            <div class="stats fs-12 d-flex align-items-center lh-18">
+                                                <span class="pe-2 d-inline-flex align-items-center" title="Gold badge"><span class="ball gold"></span>Gold</span>
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Silver badge"><span class="ball silver"></span>Silver</span>
+                                                <span class="pe-2 d-inline-flex align-items-center" title="Bronze badge"><span class="ball"></span>Bronze</span> -->
+                                            </div>
+                                        </div>
+                                        <small class="meta d-block text-end">
+                                            <span class="text-black d-block lh-18">asked</span>
+                                            <span class="d-block lh-18 fs-12">6 hours ago</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end media -->
+                        <div class="media media-card rounded-0 shadow-none mb-0 bg-transparent p-3 border-bottom border-bottom-gray">
+                            <div class="votes text-center votes-2">
+                                <div class="vote-block">
+                                    <span class="vote-counts d-block text-center pr-0 lh-20 fw-medium">3</span>
+                                    <span class="vote-text d-block fs-13 lh-18">votes</span>
+                                </div>
+                                <div class="answer-block my-2">
+                                    <span class="answer-counts d-block lh-20 fw-medium">0</span>
+                                    <span class="answer-text d-block fs-13 lh-18">answers</span>
+                                </div>
+                                <div class="view-block">
+                                    <span class="view-counts d-block lh-20 fw-medium">12</span>
+                                    <span class="view-text d-block fs-13 lh-18">views</span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="mb-2 fw-medium"><a href="question-details.html">Why is my phone overheating during use?</a></h5>
+                                <p class="mb-2 truncate lh-20 fs-15">My phone heats up excessively when I use it for gaming or video calls. Is this normal? What can I do to fix it?</p>
+                                <div class="tags">
+                                    <a href="#" class="tag-link">Overheating</a>
+                                    <a href="#" class="tag-link">Smartphone</a>
+                                    <a href="#" class="tag-link">PerformanceIssues</a>
+                                    <!-- <a href="#" class="tag-link">select</a> -->
+                                </div>
+                                <div class="media media-card user-media align-items-center px-0 border-bottom-0 pb-0">
+                                    <a href="user-profile.html" class="media-img d-block">
+                                        <img src="images/img53.jpg" alt="avatar">
+                                    </a>
+                                    <div class="media-body d-flex flex-wrap align-items-center justify-content-between">
+                                        <div>
+                                            <h5 class="pb-1"><a href="user-profile.html">Nisar T</a></h5>
+                                            <div class="stats fs-12 d-flex align-items-center lh-18">
+                                                <!-- <span class="text-black pe-2" title="Reputation score">224</span> -->
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Gold badge"><span class="ball gold"></span>Gold</span>
+                                                <span class="pe-2 d-inline-flex align-items-center" title="Silver badge"><span class="ball silver"></span>Silver</span> -->
+                                                <span class="pe-2 d-inline-flex align-items-center" title="Bronze badge"><span class="ball"></span>Bronze</span>
+                                            </div>
+                                        </div>
+                                        <small class="meta d-block text-end">
+                                            <span class="text-black d-block lh-18">asked</span>
+                                            <span class="d-block lh-18 fs-12">6 hours ago</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end media -->
+                        <div class="media media-card rounded-0 shadow-none mb-0 bg-transparent p-3 border-bottom border-bottom-gray">
+                            <div class="votes text-center votes-2">
+                                <div class="vote-block">
+                                    <span class="vote-counts d-block text-center pr-0 lh-20 fw-medium">0</span>
+                                    <span class="vote-text d-block fs-13 lh-18">votes</span>
+                                </div>
+                                <div class="answer-block my-2">
+                                    <span class="answer-counts d-block lh-20 fw-medium">0</span>
+                                    <span class="answer-text d-block fs-13 lh-18">answers</span>
+                                </div>
+                                <div class="view-block">
+                                    <span class="view-counts d-block lh-20 fw-medium">12</span>
+                                    <span class="view-text d-block fs-13 lh-18">views</span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="mb-2 fw-medium"><a href="question-details.html">Can I fix a cracked phone screen myself?</a></h5>
+                                <p class="mb-2 truncate lh-20 fs-15">The screen of my phone is cracked. I want to repair it myself instead of visiting a service center. What tools and steps are needed?</p>
+                                <div class="tags">
+                                    <a href="#" class="tag-link">ScreenRepair</a>
+                                    <a href="#" class="tag-link">DIYRepair</a>
+                                    <a href="#" class="tag-link">PhoneDisplay</a>
+                                    <!-- <a href="#" class="tag-link">select</a> -->
+                                </div>
+                                <div class="media media-card user-media align-items-center px-0 border-bottom-0 pb-0">
+                                    <a href="user-profile.html" class="media-img d-block">
+                                        <img src="images/img53.jpg" alt="avatar">
+                                    </a>
+                                    <div class="media-body d-flex flex-wrap align-items-center justify-content-between">
+                                        <div>
+                                            <h5 class="pb-1"><a href="user-profile.html">Abdu Salim</a></h5>
+                                            <div class="stats fs-12 d-flex align-items-center lh-18">
+                                                <!-- <span class="text-black pe-2" title="Reputation score">224</span> -->
+                                                <span class="pe-2 d-inline-flex align-items-center" title="Gold badge"><span class="ball gold"></span>Gold</span>
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Silver badge"><span class="ball silver"></span>Silver</span> -->
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Bronze badge"><span class="ball"></span>Bronze</span> -->
+                                            </div>
+                                        </div>
+                                        <small class="meta d-block text-end">
+                                            <span class="text-black d-block lh-18">asked</span>
+                                            <span class="d-block lh-18 fs-12">6 hours ago</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end media -->
+                        <div class="media media-card rounded-0 shadow-none mb-0 bg-transparent p-3 border-bottom border-bottom-gray">
+                            <div class="votes text-center votes-2">
+                                <div class="vote-block">
+                                    <span class="vote-counts d-block text-center pr-0 lh-20 fw-medium">0</span>
+                                    <span class="vote-text d-block fs-13 lh-18">votes</span>
+                                </div>
+                                <div class="answer-block my-2">
+                                    <span class="answer-counts d-block lh-20 fw-medium">0</span>
+                                    <span class="answer-text d-block fs-13 lh-18">answers</span>
+                                </div>
+                                <div class="view-block">
+                                    <span class="view-counts d-block lh-20 fw-medium">12</span>
+                                    <span class="view-text d-block fs-13 lh-18">views</span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="mb-2 fw-medium"><a href="question-details.html">How to recover data from a water-damaged phone?</a></h5>
+                                <p class="mb-2 truncate lh-20 fs-15">My phone fell into water and is not turning on. How can I retrieve important data from it?</p>
+                                <div class="tags">
+                                    <a href="#" class="tag-link">DataRecovery</a>
+                                    <a href="#" class="tag-link">WaterDamage</a>
+                                    <a href="#" class="tag-link">BackupTips</a>
+                                    <!-- <a href="#" class="tag-link">select</a> -->
+                                </div>
+                                <div class="media media-card user-media align-items-center px-0 border-bottom-0 pb-0">
+                                    <a href="user-profile.html" class="media-img d-block">
+                                        <img src="images/img53.jpg" alt="avatar">
+                                    </a>
+                                    <div class="media-body d-flex flex-wrap align-items-center justify-content-between">
+                                        <div>
+                                            <h5 class="pb-1"><a href="user-profile.html">Ramjith R</a></h5>
+                                            <div class="stats fs-12 d-flex align-items-center lh-18">
+                                                <!-- <span class="text-black pe-2" title="Reputation score">224</span> -->
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Gold badge"><span class="ball gold"></span>Gold</span> -->
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Silver badge"><span class="ball silver"></span>Silver</span> -->
+                                                <span class="pe-2 d-inline-flex align-items-center" title="Bronze badge"><span class="ball"></span>Bronze</span>
+                                            </div>
+                                        </div>
+                                        <small class="meta d-block text-end">
+                                            <span class="text-black d-block lh-18">asked</span>
+                                            <span class="d-block lh-18 fs-12">6 hours ago</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end media -->
+                        <div class="media media-card rounded-0 shadow-none mb-0 bg-transparent p-3 border-bottom border-bottom-gray">
+                            <div class="votes text-center votes-2">
+                                <div class="vote-block">
+                                    <span class="vote-counts d-block text-center pr-0 lh-20 fw-medium">0</span>
+                                    <span class="vote-text d-block fs-13 lh-18">votes</span>
+                                </div>
+                                <div class="answer-block my-2">
+                                    <span class="answer-counts d-block lh-20 fw-medium">0</span>
+                                    <span class="answer-text d-block fs-13 lh-18">answers</span>
+                                </div>
+                                <div class="view-block">
+                                    <span class="view-counts d-block lh-20 fw-medium">12</span>
+                                    <span class="view-text d-block fs-13 lh-18">views</span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="mb-2 fw-medium"><a href="question-details.html">How to fix a phone with a boot loop issue?</a></h5>
+                                <p class="mb-2 truncate lh-20 fs-15">My phone is stuck in a boot loop and keeps restarting itself. What causes this, and how can I fix it?.</p>
+                                <div class="tags">
+                                    <a href="#" class="tag-link">BootLoop</a>
+                                    <a href="#" class="tag-link">PhoneRestart</a>
+                                    <a href="#" class="tag-link">SoftwareIssue</a>
+                                    <!-- <a href="#" class="tag-link">select</a> -->
+                                </div>
+                                <div class="media media-card user-media align-items-center px-0 border-bottom-0 pb-0">
+                                    <a href="user-profile.html" class="media-img d-block">
+                                        <img src="images/img53.jpg" alt="avatar">
+                                    </a>
+                                    <div class="media-body d-flex flex-wrap align-items-center justify-content-between">
+                                        <div>
+                                            <h5 class="pb-1"><a href="user-profile.html">Raghav K</a></h5>
+                                            <div class="stats fs-12 d-flex align-items-center lh-18">
+                                                <!-- <span class="text-black pe-2" title="Reputation score">224</span> -->
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Gold badge"><span class="ball gold"></span>Gold</span> -->
+                                                <span class="pe-2 d-inline-flex align-items-center" title="Silver badge"><span class="ball silver"></span>Silver</span>
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Bronze badge"><span class="ball"></span>Bronze</span> -->
+                                            </div>
+                                        </div>
+                                        <small class="meta d-block text-end">
+                                            <span class="text-black d-block lh-18">asked</span>
+                                            <span class="d-block lh-18 fs-12">6 hours ago</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end media -->
+                        <div class="media media-card rounded-0 shadow-none mb-0 bg-transparent p-3 border-bottom border-bottom-gray">
+                            <div class="votes text-center votes-2">
+                                <div class="vote-block">
+                                    <span class="vote-counts d-block text-center pr-0 lh-20 fw-medium">3</span>
+                                    <span class="vote-text d-block fs-13 lh-18">votes</span>
+                                </div>
+                                <div class="answer-block answered my-2">
+                                    <span class="answer-counts d-block lh-20 fw-medium">3</span>
+                                    <span class="answer-text d-block fs-13 lh-18">answers</span>
+                                </div>
+                                <div class="view-block">
+                                    <span class="view-counts d-block lh-20 fw-medium">12</span>
+                                    <span class="view-text d-block fs-13 lh-18">views</span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="mb-2 fw-medium"><a href="question-details.html">What to do if my phone camera is blurry?</a></h5>
+                                <p class="mb-2 truncate lh-20 fs-15">My phone's camera captures blurry photos even when the lens appears clean. How can I fix this?</p>
+                                <div class="tags">
+                                    <a href="#" class="tag-link">CameraIssue</a>
+                                    <a href="#" class="tag-link">BlurryPhotos</a>
+                                    <a href="#" class="tag-link">Troubleshooting</a>
+                                    <!-- <a href="#" class="tag-link">select</a> -->
+                                </div>
+                                <div class="media media-card user-media align-items-center px-0 border-bottom-0 pb-0">
+                                    <a href="user-profile.html" class="media-img d-block">
+                                        <img src="images/img53.jpg" alt="avatar">
+                                    </a>
+                                    <div class="media-body d-flex flex-wrap align-items-center justify-content-between">
+                                        <div>
+                                            <h5 class="pb-1"><a href="user-profile.html">Amal P</a></h5>
+                                            <div class="stats fs-12 d-flex align-items-center lh-18">
+                                                <!-- <span class="text-black pe-2" title="Reputation score">224</span> -->
+                                                <span class="pe-2 d-inline-flex align-items-center" title="Gold badge"><span class="ball gold"></span>Gold</span>
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Silver badge"><span class="ball silver"></span>Silver</span> -->
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Bronze badge"><span class="ball"></span>Bronze</span> -->
+                                            </div>
+                                        </div>
+                                        <small class="meta d-block text-end">
+                                            <span class="text-black d-block lh-18">asked</span>
+                                            <span class="d-block lh-18 fs-12">6 hours ago</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end media -->
+                        <div class="media media-card rounded-0 shadow-none mb-0 bg-transparent p-3 border-bottom border-bottom-gray">
+                            <div class="votes text-center votes-2">
+                                <div class="vote-block">
+                                    <span class="vote-counts d-block text-center pr-0 lh-20 fw-medium">3</span>
+                                    <span class="vote-text d-block fs-13 lh-18">votes</span>
+                                </div>
+                                <div class="answer-block answered my-2">
+                                    <span class="answer-counts d-block lh-20 fw-medium">3</span>
+                                    <span class="answer-text d-block fs-13 lh-18">answers</span>
+                                </div>
+                                <div class="view-block">
+                                    <span class="view-counts d-block lh-20 fw-medium">12</span>
+                                    <span class="view-text d-block fs-13 lh-18">views</span>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="mb-2 fw-medium"><a href="question-details.html">Why is my phone speaker not working?</a></h5>
+                                <p class="mb-2 truncate lh-20 fs-15">My phone’s speaker has stopped producing sound. What could be the reason, and how can I fix it?</p>
+                                <div class="tags">
+                                    <a href="#" class="tag-link">SpeakerIssue</a>
+                                    <a href="#" class="tag-link">NoSound</a>
+                                    <a href="#" class="tag-link">RepairTips</a>
+                                    <!-- <a href="#" class="tag-link">select</a> -->
+                                </div>
+                                <div class="media media-card user-media align-items-center px-0 border-bottom-0 pb-0">
+                                    <a href="user-profile.html" class="media-img d-block">
+                                        <img src="images/img53.jpg" alt="avatar">
+                                    </a>
+                                    <div class="media-body d-flex flex-wrap align-items-center justify-content-between">
+                                        <div>
+                                            <h5 class="pb-1"><a href="user-profile.html">Jithin Raj</a></h5>
+                                            <div class="stats fs-12 d-flex align-items-center lh-18">
+                                                <!-- <span class="text-black pe-2" title="Reputation score">224</span> -->
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Gold badge"><span class="ball gold"></span>Gold</span> -->
+                                                <span class="pe-2 d-inline-flex align-items-center" title="Silver badge"><span class="ball silver"></span>Silver</span>
+                                                <!-- <span class="pe-2 d-inline-flex align-items-center" title="Bronze badge"><span class="ball"></span>Bronze</span> -->
+                                            </div>
+                                        </div>
+                                        <small class="meta d-block text-end">
+                                            <span class="text-black d-block lh-18">asked</span>
+                                            <span class="d-block lh-18 fs-12">6 hours ago</span>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end media -->
+                    </div><!-- end questions-snippet -->
+                    <div class="pager pt-30px px-3">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination generic-pagination pe-1">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true"><i class="la la-arrow-left"></i></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true"><i class="la la-arrow-right"></i></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <p class="fs-13 pt-2">Showing 1-10 results of 50,577 questions</p>
+                    </div>
+                </div><!-- end question-main-bar -->
+            </div><!-- end col-lg-7 -->
+            <div class="col-lg-3">
+                <div class="sidebar pt-40px">
+
+
+                    <div class="card card-item">
+                        <div class="card-body">
+                            <h3 class="fs-17 pb-3">Top Questions</h3>
+                            <div class="divider"><span></span></div>
+                            <div class="sidebar-questions pt-3">
+                                <div class="media media-card media--card media--card-2">
+                                    <div class="media-body">
+                                        <h5><a href="question-details.html">How to fix a phone that won't connect to Wi-Fi?</a></h5>
+                                        <small class="meta">
+                                            <span class="pe-1">2 mins ago</span>
+                                            <span class="pe-1">. by</span>
+                                            <a href="#" class="author">Afsal M</a>
+                                        </small>
+                                    </div>
+                                </div><!-- end media -->
+                                <div class="media media-card media--card media--card-2">
+                                    <div class="media-body">
+                                        <h5><a href="question-details.html">Why does my phone’s battery drain so quickly?</a></h5>
+                                        <small class="meta">
+                                            <span class="pe-1">48 mins ago</span>
+                                            <span class="pe-1">. by</span>
+                                            <a href="#" class="author">Vishnu S</a>
+                                        </small>
+                                    </div>
+                                </div><!-- end media -->
+                                <div class="media media-card media--card media--card-2">
+                                    <div class="media-body">
+                                        <h5><a href="question-details.html">How to fix a phone that keeps freezing?</a></h5>
+                                        <small class="meta">
+                                            <span class="pe-1">1 hour ago</span>
+                                            <span class="pe-1">. by</span>
+                                            <a href="#" class="author">Melvin TP</a>
+                                        </small>
+                                    </div>
+                                </div><!-- end media -->
+                            </div><!-- end sidebar-questions -->
+                        </div>
+                    </div><!-- end card -->
+
+                    <div class="card card-item">
+                        <div class="card-body">
+                            <h3 class="fs-17 pb-3">Top Case Studies</h3>
+                            <div class="divider"><span></span></div>
+                            <div class="sidebar-questions pt-3">
+                                <div class="media media-card media--card media--card-2">
+                                    <div class="media-body">
+                                        <h5><a href="blog-single.html">Revamping Customer Experience in Mobile and Laptop Repair: A Case Study on Modern Service Practices</a></h5>
+                                        <small class="meta">
+                                            <span class="pe-1">2 mins ago</span>
+                                            <span class="pe-1">. by</span>
+                                            <a href="#" class="author">Jeenu</a>
+                                        </small>
+                                    </div>
+                                </div><!-- end media -->
+                                <div class="media media-card media--card media--card-2">
+                                    <div class="media-body">
+                                        <h5><a href="blog-single.html">Cost-Effective Solutions in Mobile and Laptop Servicing: Balancing Quality and Affordability</a></h5>
+                                        <small class="meta">
+                                            <span class="pe-1">48 mins ago</span>
+                                            <span class="pe-1">. by</span>
+                                            <a href="#" class="author">Riyas</a>
+                                        </small>
+                                    </div>
+                                </div><!-- end media -->
+                                <div class="media media-card media--card media--card-2">
+                                    <div class="media-body">
+                                        <h5><a href="blog-single.html">Leveraging Technology in Mobile and Laptop Repair Services: A Study of Diagnostic Tools and Techniques</a></h5>
+                                        <small class="meta">
+                                            <span class="pe-1">1 hour ago</span>
+                                            <span class="pe-1">. by</span>
+                                            <a href="#" class="author">Sayooj</a>
+                                        </small>
+                                    </div>
+                                </div><!-- end media -->
+                            </div><!-- end sidebar-questions -->
+                        </div>
+                    </div><!-- end card -->
+
+
+                    <div class="card card-item">
+                        <div class="card-body">
+                            <h3 class="fs-17 pb-3">Top Categories</h3>
+                            <div class="divider"><span></span></div>
+                            <div class="category-list pt-4">
+                                <a href="#" class="cat-item d-flex align-items-center justify-content-between mb-3 hover-y">
+                                    <span class="cat-title">Mobile Phone Repair</span>
+                                    <span class="cat-number">238</span>
+                                </a>
+                                <a href="#" class="cat-item d-flex align-items-center justify-content-between mb-3 hover-y">
+                                    <span class="cat-title">Laptop Repair</span>
+                                    <span class="cat-number">238</span>
+                                </a>
+                                <a href="#" class="cat-item d-flex align-items-center justify-content-between mb-3 hover-y">
+                                    <span class="cat-title">Tablet Repair</span>
+                                    <span class="cat-number">238</span>
+                                </a>
+                                <a href="#" class="cat-item d-flex align-items-center justify-content-between mb-3 hover-y">
+                                    <span class="cat-title">Smartwatch Repair</span>
+                                    <span class="cat-number">238</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- end card -->
+
+                    <div class="card card-item">
+                        <div class="card-body">
+                            <h3 class="fs-17 pb-3">Top Tags</h3>
+                            <div class="divider"><span></span></div>
+                            <div class="tags pt-4">
+                                <div class="tag-item">
+                                    <a href="#" class="tag-link tag-link-md">ScreenRepair</a>
+                                    <span class="item-multiplier fs-13">
+                                    <span>×</span>
+                                    <span>32924</span>
+                                </span>
+                                </div><!-- end tag-item -->
+                                <div class="tag-item">
+                                    <a href="#" class="tag-link tag-link-md">BatteryReplacement</a>
+                                    <span class="item-multiplier fs-13">
+                                    <span>×</span>
+                                    <span>32924</span>
+                                </span>
+                                </div><!-- end tag-item -->
+                                <div class="tag-item">
+                                    <a href="#" class="tag-link tag-link-md">ChargingIssues</a>
+                                    <span class="item-multiplier fs-13">
+                                    <span>×</span>
+                                    <span>32924</span>
+                                </span>
+                                </div><!-- end tag-item -->
+                                <div class="tag-item">
+                                    <a href="#" class="tag-link tag-link-md">WaterDamage</a>
+                                    <span class="item-multiplier fs-13">
+                                    <span>×</span>
+                                    <span>32924</span>
+                                </span>
+                                </div><!-- end tag-item -->
+                                <div class="tag-item">
+                                    <a href="#" class="tag-link tag-link-md">CameraFix</a>
+                                    <span class="item-multiplier fs-13">
+                                    <span>×</span>
+                                    <span>32924</span>
+                                </span>
+                                </div><!-- end tag-item -->
+                                <div class="collapse" id="showMoreTags">
+                                    <div class="tag-item">
+                                        <a href="#" class="tag-link tag-link-md">TouchscreenIssues</a>
+                                        <span class="item-multiplier fs-13">
+                                    <span>×</span>
+                                    <span>32924</span>
+                                </span>
+                                    </div><!-- end tag-item -->
+                                    <div class="tag-item">
+                                        <a href="#" class="tag-link tag-link-md">iPhoneRepair</a>
+                                        <span class="item-multiplier fs-13">
+                                    <span>×</span>
+                                    <span>32924</span>
+                                </span>
+                                    </div><!-- end tag-item -->
+                                    <div class="tag-item">
+                                        <a href="#" class="tag-link tag-link-md">AndroidRepair</a>
+                                        <span class="item-multiplier fs-13">
+                                    <span>×</span>
+                                    <span>32924</span>
+                                </span>
+                                    </div><!-- end tag-item -->
+                                    <div class="tag-item">
+                                        <a href="#" class="tag-link tag-link-md">XiaomiRepair</a>
+                                        <span class="item-multiplier fs-13">
+                                    <span>×</span>
+                                    <span>32924</span>
+                                </span>
+                                    </div><!-- end tag-item -->
+                                    <div class="tag-item">
+                                        <a href="#" class="tag-link tag-link-md">BootLoop</a>
+                                        <span class="item-multiplier fs-13">
+                                    <span>×</span>
+                                    <span>32924</span>
+                                </span>
+                                    </div><!-- end tag-item -->
+                                    <div class="tag-item">
+                                        <a href="#" class="tag-link tag-link-md">SignalIssues</a>
+                                        <span class="item-multiplier fs-13">
+                                    <span>×</span>
+                                    <span>32924</span>
+                                </span>
+                                    </div><!-- end tag-item -->
+                                </div><!-- end collapse -->
+                                <a class="collapse-btn fs-13" data-bs-toggle="collapse" href="#showMoreTags" role="button" aria-expanded="false" aria-controls="showMoreTags">
+                                    <span class="collapse-btn-hide">Show more<i class="la la-angle-down ms-1 fs-11"></i></span>
+                                    <span class="collapse-btn-show">Show less<i class="la la-angle-up ms-1 fs-11"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- end card -->
+
+
+
+
+
+                    <!-- <div class="ad-card">
+                        <h4 class="text-gray text-uppercase fs-13 pb-3 text-center">Advertisements</h4>
+                        <div class="ad-banner mb-4 mx-auto">
+                            <span class="ad-text">290x500</span>
+                        </div>
+                    </div> -->
+                    <!-- end ad-card -->
+                </div><!-- end sidebar -->
+            </div><!-- end col-lg-3 -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end question-area -->
+<!-- ================================
+         END QUESTION AREA
+================================= -->
+
+<!-- ================================
+         END FOOTER AREA
+================================= -->
+<section class="footer-area pt-0px bg-dark position-relative">
+    <!-- <span class="vertical-bar-shape vertical-bar-shape-1"></span>
+    <span class="vertical-bar-shape vertical-bar-shape-2"></span>
+    <span class="vertical-bar-shape vertical-bar-shape-3"></span>
+    <span class="vertical-bar-shape vertical-bar-shape-4"></span> -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-lg-3 responsive-column-half">
+                <div class="footer-item">
+                    <h3 class="fs-18 fw-bold pb-2 text-white">Company</h3>
+                    <ul class="generic-list-item generic-list-item-hover-underline pt-3 generic-list-item-white">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="advertising.html">Advertising</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 responsive-column-half">
+                <div class="footer-item">
+                    <h3 class="fs-18 fw-bold pb-2 text-white">Legal Stuff</h3>
+                    <ul class="generic-list-item generic-list-item-hover-underline pt-3 generic-list-item-white">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms of Service</a></li>
+                        <li><a href="privacy-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 responsive-column-half">
+                <div class="footer-item">
+                    <h3 class="fs-18 fw-bold pb-2 text-white">Help</h3>
+                    <ul class="generic-list-item generic-list-item-hover-underline pt-3 generic-list-item-white">
+                        <li><a href="faq.html">Knowledge Base</a></li>
+                        <li><a href="contact.html">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 responsive-column-half">
+                <div class="footer-item">
+                    <h3 class="fs-18 fw-bold pb-2 text-white">Connect with us</h3>
+                    <ul class="generic-list-item generic-list-item-hover-underline pt-3 generic-list-item-white">
+                        <li><a href="#"><i class="la la-facebook me-1"></i> Facebook</a></li>
+                        <li><a href="#"><i class="la la-twitter me-1"></i> Twitter</a></li>
+                        <li><a href="#"><i class="la la-linkedin me-1"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="la la-instagram me-1"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <hr class="border-top-gray my-5">
+    <div class="container">
+        <div class="row align-items-center pb-4 copyright-wrap">
+            <div class="col-lg-6">
+                <a href="index.html" class="d-inline-block">
+                    <img  width="140" src="images/logo-white.png" alt="footer logo" class="footer-logo">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <p class="copyright-desc text-end fs-14">Copyright &copy; <span id="copyright-date"></span> <a href="https://nexcrestit.com/">Nexcrest IT LLP.</a> </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================================
+          END FOOTER AREA
+================================= -->
+
+<!-- start back to top -->
+<div id="back-to-top" data-bs-toggle="tooltip" data-placement="top" title="Return to top">
+    <i class="la la-arrow-up"></i>
+</div>
+<!-- end back to top -->
+
+<!-- template js files -->
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/selectize.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
