@@ -1,0 +1,28 @@
+
+
+
+/* THREE DOT HOVER STYLING IN HOMEPAGE QUESTION CARDS */
+
+.la-ellipsis-h {
+    padding: 8px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.la-ellipsis-h:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* Additional styles for engagement section */
+.engagement-section {
+    background-color: #fafafa;
+}
+
+.vote-counts, .view-counts, .share-counts {
+    line-height: 1;
+}
+
+.vote-text, .view-text, .share-text {
+    opacity: 0.8;
+}
