@@ -167,7 +167,7 @@
     right: 0;
     width: 380px;
     background-color: #fff;
-    border-radius: 20px;
+    /* border-radius: 5px; */
     overflow: hidden;
     display: none;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -280,7 +280,7 @@
 
 .chat-input .btn {
     border-radius: 50%;
-    width: 45px;
+    width: 50px;
     height: 45px;
     padding: 0;
     display: flex;
@@ -290,6 +290,7 @@
     border: none;
     box-shadow: 0 3px 10px rgba(52, 152, 219, 0.2);
     transition: all 0.3s ease;
+    transform: scale(1); 
 }
 
 .chat-input .btn:hover {
@@ -406,7 +407,7 @@
     right: 0;
     width: 450px; /* Increased from 380px */
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
     display: none;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
